@@ -24,6 +24,16 @@ public record CustomerRequest(
     @NotBlank(message = "password is blank")
     @Size(min = 6, max = 12)
     @JsonProperty("password")
-    String password) {
+    String password,
+
+    @JsonProperty("address")
+    String address,
+
+    @JsonProperty("city")
+    String city,
+
+    @JsonProperty("pin_code")
+    String pin_code)
+{
 
 }
