@@ -38,4 +38,7 @@ public class Customer {
     @Column(name="pin_code")
     private String pin_code;
 
+    @Column(name = "access_token", unique = true)
+    private String accessToken;
+
 }
